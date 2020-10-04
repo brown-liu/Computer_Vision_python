@@ -22,6 +22,6 @@ while True:
     operating,img=cap.read()
     cv2.imshow("video",img)
     print(f"FTP = {round(1/(time.time()-start),2)}")
-
+#********    VERY IMPORTANT   waitkey (MUST BE 1 if want to keep streaming)
     if cv2.waitKey(1)&0xFF ==ord('q'):
         break
